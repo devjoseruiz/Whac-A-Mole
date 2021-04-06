@@ -2,6 +2,10 @@
 
 The classical Whac-A-Mole game, but the moles are Digletts! A Pokemon inspired mini-game made with Blazor/C# .NET & Bootstrap.
 
+# Demo
+
+There is a demo available deployed on Netlify: https://whac-a-diglett.netlify.app/
+
 # Requirements
 
 This application requires:
