@@ -1,6 +1,6 @@
 # Whac-A-Mole
 
-The classical Whac-A-Mole game, but the moles are Digletts! Made with Blazor/C# .NET & Bootstrap.
+The classical Whac-A-Mole game, but the moles are Digletts! A Pokemon inspired mini-game made with Blazor/C# .NET & Bootstrap.
 
 # Requirements
 
@@ -18,4 +18,4 @@ dotnet watch -p . run
 
 # License
 
-Project licensed under GPLv3.s
+Project licensed under GPLv3.
