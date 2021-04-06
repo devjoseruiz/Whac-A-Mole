@@ -1,0 +1,14 @@
+﻿<img src=@("../img/" + SquareModel.Src + ".png") draggable="false" class="img-fluid square unselectable" @onmouseup="ValidateHit">
+
+@code {
+    [Parameter]
+    public EventCallback OnMouseUp { get; set; }
+
+    [Parameter]
+    public SquareModel SquareModel { get; set; }
+
+    private void ValidateHit()
+    {
+        OnMouseUp.InvokeAsync(new EventArgs());
+    }  
+}

@@ -1,0 +1,43 @@
+﻿@page "/"
+
+<Navbar />
+
+<div class="container">
+    <div class="card">
+        <div class="card-header text-center">
+            Whack'em all!
+        </div>
+        <div class="card-body">
+            <div class="container">
+                <div class="row row-cols-3">
+                    @foreach(var s in Squares) {
+                        <div class="col d-flex justify-content-center">
+                            <Square SquareModel="s" OnMouseUp="() => MouseUp(s)" />
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="card-footer d-flex justify-content-around">
+            <div class="btn-group btn-group-sm" role="group">
+                <button type="button" class="btn btn-secondary">
+                    <i class="bi bi-star-fill"></i>
+                    Score
+                    <span class="badge badge-light">@score pt</span>
+                </button>
+                <button type="button" class="btn btn-warning">
+                    <i class="bi bi-stopwatch-fill"></i>
+                    Time remaining
+                    <span class="badge badge-light">@time s</span>
+                </button>
+            
+            @if (restart){
+                <button type="button" class="btn btn-primary" @onclick="RestartGame">
+                    <i class="bi bi-play-fill"></i>
+                    Play again
+                </button>
+            }
+            </div>
+        </div>
+    </div>
+</div>
